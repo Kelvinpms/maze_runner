@@ -83,7 +83,7 @@ with open('input.txt') as f:
     # leia as dimensões da matriz
     n, m = map(int, f.readline().split())
     # leia a matriz
-    matrix = np.zeros((n, m), dtype=np.int)
+    matrix = np.zeros((n, m), dtype=int)
     for i in range(n):
         row = list(map(int, f.readline().split()))
         matrix[i, :] = row
